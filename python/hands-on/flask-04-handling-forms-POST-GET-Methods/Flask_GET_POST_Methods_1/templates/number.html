@@ -7,8 +7,11 @@
     <title>Document</title>
 </head>
 <body>
-    {% for x in range(1,11) %}
-        <h>{{ x }}<h1>
-    {% endfor %}
+    {% if total %}
+    <h2>Total of three numbers is {{ total }}</h2>
+    {% else %}
+    <h2>Since this is GET request, Total hasn't been calculated</h2>
+    {% endif %}
+
 </body>
 </html>
